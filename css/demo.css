@@ -1,0 +1,18 @@
+#controls {
+	float: left;
+	width: 250px;
+}
+
+#demo {
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	float: left;
+	height: 200px;
+	padding-top: 200px;
+	text-align: center;
+	width: 350px;
+}
+
+#loader {
+	display: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+	<script type="text/javascript" src="js/jquery.glaze.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#show').on('click', function (e) {
+				$('#demo').glaze();
+				$('#demo').glaze('show');
+				$('#demo-2').glaze();
+				$('#demo-2').glaze('show');
+			});
+			$('#hide').on('click', function (e) {
+				$('#demo').glaze('hide');
+				$('#demo-2').glaze('hide');
+			});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+	<title>Glaze Demo</title>
+</head>
+<body>
+<div id="controls">
+	<a id="show" href="javascript:void(0);">Show the loader</a><br/>
+	<a id="hide" href="javascript:void(0);">Hide the loader</a>
+</div>
+<div id="demo">This is the element the loader will cover.</div>
+<input id="demo-2" type="text" value="testing" />
+</body>
+</html>

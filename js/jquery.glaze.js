@@ -51,7 +51,7 @@
 						overlay.addClass(options.overlayClass);
 					}
 
-					$('body').after(overlay);
+					$('body').append(overlay);
 					self.data('glazeOverlay', overlay);
 					self.data('glazeShow', options.show);
 					self.data('glazeHide', options.hide);
